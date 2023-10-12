@@ -1,7 +1,6 @@
 <template>
   <q-page>
     <div class="q-mt-sm flex justify-center">
-      <!-- <q-input rounded standout v-model="text" label="Add Title" /> -->
       <q-input
         rounded
         standout
@@ -43,6 +42,7 @@
         </q-card-section>
       </q-card>
     </div>
+    <!-- wanted to use v-if & else on the q-card-section, however todoList.length>0 was always true. Hence the seperate div-->
     <div class="justify-center q-mt-lg" v-if="todoList.length == 0">
       <div class="text-center">No to-dos here, enjoy a meme instead</div>
       <div class="row justify-center">
